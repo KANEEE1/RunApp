@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     API_V1_PREFIX: str = "/api/v1"
     
     # Database
-    DATABASE_URL: str = "postgresql://kane1:cringe123@db:5432/runapp_db"
+    DATABASE_URL: str = "postgresql://kane1:cringe123@localhost:5432/runapp_db"
     
     # Security
     SECRET_KEY: str = "secret-key"

@@ -1,4 +1,3 @@
-"""Main application entry point."""
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -28,5 +27,4 @@ app.include_router(api_router)
 
 @app.get("/")
 def root():
-    """Root endpoint."""
     return {"message": "Welcome to RunApp", "version": settings.APP_VERSION}
